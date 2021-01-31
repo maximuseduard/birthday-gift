@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static('./dist/birthday-gift'));
 
-app.get('/*', (req, res) => res.sendFile('index.html', { root: 'dist/birthday-gift/' }));
+app.get('/*', (_req, res) => res.sendFile('index.html', { root: 'dist/birthday-gift/' }));
 
 app.listen(process.env.PORT || 8080, function () {
     console.log('###########################################################');
