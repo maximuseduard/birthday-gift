@@ -1,6 +1,8 @@
 import * as moment from 'moment';
+import { Track } from 'ngx-audio-player';
 
 import { Component, OnInit } from '@angular/core';
+import { faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 import { StandbyScreenService } from './standby-screen.service';
 
@@ -24,13 +26,33 @@ export interface TimeObject {
 
 @Component({
     templateUrl: './standby-screen.component.html',
+    styleUrls: ['./standby-screen.component.scss'],
 })
 export class StandbyScreenComponent implements OnInit {
     private _birthday = moment('2021-03-31');
     private _interval;
     private _innerWidth: any;
 
+    showAudioPlayer = false;
     timeLeft: string;
+
+    faHeadphones = faHeadphones;
+
+    audioPlayerPageSizeOptions = [10, 20];
+    audioPlayerPlaylist: Track[] = [
+        {
+            title: 'Classic',
+            link: 'https://dl.dropboxusercontent.com/s/1db7rpvw6055d5d/Beethoven.mp3?dl=0',
+        },
+        {
+            title: 'In Love',
+            link: 'https://dl.dropboxusercontent.com/s/9v0psowra7ekhxo/A%20Himitsu%20-%20In%20Love%20%28feat.%20Nori%29.flac?dl=0',
+        },
+        {
+            title: 'On & On (feat. Daniel Levi) [NCS Release]',
+            link: 'https://dl.dropboxusercontent.com/s/w99exjxnwoqwz0e/Cartoon-on-on-feat-daniel-levi-ncs-release.mp3?dl=0',
+        },
+    ];
 
     constructor(private _standbyScreenService: StandbyScreenService) {}
 
