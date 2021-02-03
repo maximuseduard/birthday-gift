@@ -17,8 +17,10 @@
 <div class="audio-player" [class.d-none]="!showAudioPlayer">
     <ngx-audio-player
         muted="muted"
-        [autoPlay]="false"
+        [autoPlay]="true"
         [expanded]="true"
+        [displayArtist]="true"
+        [displayDuration]="true"
         [playlist]="audioPlayerPlaylist"
         [pageSizeOptions]="audioPlayerPageSizeOptions"
     ></ngx-audio-player>
