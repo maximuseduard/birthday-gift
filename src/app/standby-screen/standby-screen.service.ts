@@ -10,6 +10,6 @@ export class StandbyScreenService {
     constructor(private _http: HttpClient) {}
 
     getActualTime(): Observable<TimeObject> {
-        return this._http.get('http://worldtimeapi.org/api/timezone/America/Sao_Paulo') as Observable<TimeObject>;
+        return this._http.get('https://worldtimeapi.org/api/timezone/America/Sao_Paulo') as Observable<TimeObject>;
     }
 }
