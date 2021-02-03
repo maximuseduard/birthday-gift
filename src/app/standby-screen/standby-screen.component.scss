@@ -1,0 +1,21 @@
+.fab {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+}
+
+.audio-player {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+
+    width: 80vw;
+    margin-left: 10vw;
+
+    @media (min-width: 700px) {
+        width: 50vw;
+        margin-left: 25vw;
+    }
+}

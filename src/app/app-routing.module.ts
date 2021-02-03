@@ -1,10 +1,23 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { AppComponent } from './app.component';
+
+const routes: Routes = [
+    {
+        path: '',
+        component: AppComponent,
+        children: [
+            {
+                path: '',
+                loadChildren: () => import('./standby-screen/standby-screen.module').then((m) => m.StandbyScreenModule),
+            },
+        ],
+    },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
