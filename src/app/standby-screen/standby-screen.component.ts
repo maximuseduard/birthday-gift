@@ -58,9 +58,15 @@ export class StandbyScreenComponent implements OnInit {
             artist: 'MC Lorenzo',
         },
         {
+            title: 'Recairei',
+            link: 'https://dl.dropboxusercontent.com/s/8ertgn5v8wtr044/Os%20Bar%C3%B5es%20da%20pisadinha%20-%20Recairei.mp3?dl=0',
+            duration: 183,
+            artist: 'Barões da pisadinha',
+        },
+        {
             title: 'That’s What I Like',
             link: 'https://dl.dropboxusercontent.com/s/m21az0ujzp44zgd/Bruno%20Mars%20-%20That%E2%80%99s%20What%20I%20Like.mp3?dl=0',
-            duration: 210,
+            duration: 167,
             artist: 'Bruno Mars',
         },
         {
