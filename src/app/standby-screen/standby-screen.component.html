@@ -1,0 +1,27 @@
+<div id="stars"></div>
+<div id="stars2"></div>
+<div id="stars3"></div>
+
+<div id="title">
+    <span>Aqui está seu presente</span>🥰<br />
+    <span>Mas tem que esperar para abrir</span>😔<br /><br />
+    <span [innerHTML]="timeLeft"></span>
+</div>
+
+<div class="fab">
+    <button mat-fab color="primary" type="button" (click)="showAudioPlayer = !showAudioPlayer">
+        <fa-icon [icon]="faHeadphones" size="2x"></fa-icon>
+    </button>
+</div>
+
+<div class="audio-player" [class.d-none]="!showAudioPlayer">
+    <ngx-audio-player
+        muted="muted"
+        [autoPlay]="true"
+        [expanded]="true"
+        [displayArtist]="true"
+        [displayDuration]="true"
+        [playlist]="audioPlayerPlaylist"
+        [pageSizeOptions]="audioPlayerPageSizeOptions"
+    ></ngx-audio-player>
+</div>
