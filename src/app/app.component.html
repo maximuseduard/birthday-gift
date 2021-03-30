@@ -1,1 +1,19 @@
 <router-outlet></router-outlet>
+
+<div class="fab">
+    <button mat-fab color="primary" type="button" (click)="showAudioPlayer = !showAudioPlayer">
+        <fa-icon [icon]="faHeadphones" size="2x"></fa-icon>
+    </button>
+</div>
+
+<div class="audio-player" [class.d-none]="!showAudioPlayer">
+    <ngx-audio-player
+        muted="muted"
+        [autoPlay]="true"
+        [expanded]="true"
+        [displayArtist]="true"
+        [displayDuration]="true"
+        [playlist]="audioPlayerPlaylist"
+        [pageSizeOptions]="audioPlayerPageSizeOptions"
+    ></ngx-audio-player>
+</div>
