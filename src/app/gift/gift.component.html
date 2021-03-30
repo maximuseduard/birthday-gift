@@ -1,0 +1,148 @@
+<div *ngIf="!allowAccess" class="vw-100 vh-100">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="form-size text-center">
+            <div class="form-group">
+                <label for="password" class="h3">Insira a senha</label>
+                <input #password type="text" class="form-control" id="password" placeholder="Digite aqui..." autofocus />
+            </div>
+
+            <button type="button" class="btn btn-primary w-50 mb-2" (click)="checkPassword()">Acessar</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="allowAccess" class="container py-5">
+    <div class="h3 text-center pt-5 pb-4">
+        <div class="mb-2">Oiee!! Eu não tenho muitas fotos suas para fazer uma galeria bacana 😢</div>
+        <div>Fiz o melhor que pude, espero que goste ❤</div>
+    </div>
+
+    <div class="gallery-row">
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/fju2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/fju3.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/fju7.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/fju1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/fju6.jpeg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/fju4.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/fju5.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/fju8.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="h3 text-center py-4">
+        <div>💙🤍❤</div>
+    </div>
+
+    <div class="gallery-row">
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/cat1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/cat2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/cat3.png" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/hannah3.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/baby1.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/dog1.jpeg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/dog1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/dog2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/hannah1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/baby2.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/furao1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/furao2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/dog3.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/hannah2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/baby3.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/baby4.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="h3 text-center py-4">
+        <div>Iti suséééé 🥺</div>
+    </div>
+
+    <div class="gallery-row">
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/hed1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/hed2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/hed3.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/owl1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/owl2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/owl3.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/hed4.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/hed5.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="h3 text-center py-4">
+        <div>😮😮😮</div>
+    </div>
+
+    <div class="gallery-row">
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/flower1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower3.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower4.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower5.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower6.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower11.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/flower8.jpeg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower9.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower10.jpeg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit7.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit8.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit9.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/swit1.jpeg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit2.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit3.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit4.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit5.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/swit6.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/flower7.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="h3 text-center py-4">
+        <div class="mb-2">Esses lugares, e muitos outros, eu determino que você irá conhecer</div>
+        <div>E se for da vontade de Deus, será comigo junto 🥰</div>
+    </div>
+
+    <div class="gallery-row justify-content-center">
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/nos2.jpg" alt="" />
+        </div>
+
+        <div class="gallery-column">
+            <img class="img-fluid img-thumbnail" src="assets/img/nos1.jpg" alt="" />
+            <img class="img-fluid img-thumbnail" src="assets/img/sara1.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="h3 text-center py-4">
+        <div class="mb-2"><i>"A mulher bondosa conquista o respeito, [...]"</i></div>
+        <div class="h5">Provérbios 11:16</div>
+    </div>
+</div>
